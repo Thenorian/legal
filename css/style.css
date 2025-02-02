@@ -1,0 +1,139 @@
+/* Bulma styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar li {
+    margin: 0 15px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+.summary-nav {
+    margin: 20px 0;
+}
+.summary-nav ul {
+    list-style: none;
+    padding: 0;
+}
+.summary-nav li {
+    margin-bottom: 10px;
+}
+.summary-nav a {
+    color: #4a4a4a;
+    text-decoration: none;
+}
+.summary-nav a:hover {
+    text-decoration: underline;
+}
+h1.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #363636;
+    margin-bottom: 1rem;
+}
+h2.subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4a4a4a;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+p {
+    margin-bottom: 1rem;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+footer a {
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+/* Bulma container and main styles */
+.container {
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.main {
+    padding: 20px 0;
+}
+
+/* Additional styles */
+.header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+.header h1 {
+    margin: 0;
+}
+.section {
+    padding: 2rem 0;
+}
+.title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+
+
+.content ul li:has(> a:only-of-type) {
+    background: #fff;
+    margin: 0.5rem 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+.content ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.content ul li a:only-child {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.content ul li:not(:has(a)) {
+    color: #333;
+    padding: 1rem;
+    list-style: upper-roman inside; /* Muda o estilo da lista para dentro */
+    text-indent: 2em; /* Adiciona espaçamento inicial como um tab */
+    padding-left: 2em; /* Adiciona padding para alinhar o texto com o marcador da lista */
+}
