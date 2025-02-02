@@ -137,3 +137,43 @@ footer a {
     text-indent: 2em; /* Adiciona espaçamento inicial como um tab */
     padding-left: 2em; /* Adiciona padding para alinhar o texto com o marcador da lista */
 }
+
+.content .list-default li:not(:has(a)) {
+    color: #333;
+    padding: 1rem;
+    list-style: disc inside; /* Muda o estilo da lista para dentro */
+    text-indent: 2em; /* Adiciona espaçamento inicial como um tab */
+    padding-left: 2em; /* Adiciona padding para alinhar o texto com o marcador da lista */
+}
+
+
+
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.card-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.card-content {
+    font-size: 1rem;
+    color: #333;
+}
+.card-footer {
+    text-align: right;
+    margin-top: 1rem;
+}
+.card-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+.card-footer a:hover {
+    text-decoration: underline;
+}
